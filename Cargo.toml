@@ -1,0 +1,19 @@
+[package]
+name = "rustlo"
+version = "0.1.0"
+authors = ["Marcos Soares<mavmaso@gmail.com>"]
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "rustlo"
+
+[dependencies]
+actix-web = "4"
+tokio = { version = "1", features = ["full"] }
+
+[dev-dependencies]
+reqwest = "0.11"
